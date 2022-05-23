@@ -1,9 +1,11 @@
 .menu-item {
     padding: 5px;
-    background-color: green;
-    border: 1px solid black;
+    margin: 0px 10px 0px 10px;
+    background-color: transparent;
+    border: 0px solid transparent;
     cursor: pointer;
+    font-size: 25px;
     &:hover {
-        background-color: rgb(19, 177, 19);
+        color:rgb(19, 177, 19)
     }
 }
