@@ -1,22 +1,24 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-function Button() {
+function Button( { redirect, type, onClick, children}) {
 
     const navigate = useNavigate();
 
-    function handleClick(redirect){
+    function handleClick(){
+        if(!redirect) { onClick(); return; }
         switch(redirect){
             case "/": navigate("/"); break;
             case "/profile": navigate("/profile"); break;
+            case "/login": navigate("/login"); break;
+            case "/signup": navigate("/signup"); break;
             default: break;
         }
     }
 
     return(
         <>
-            <button onClick={() => handleClick("/")}>Home</button>
-            <button onClick={() => handleClick("/profile")}>Profile</button>
+            <button type={type} onClick={() => handleClick()}>{children}</button>
         </>
     );
 

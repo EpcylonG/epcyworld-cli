@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import image from "../../assets/imgs/default_profile.png";
+import Button from "../Button";
 import "./Icon.scss";
 
 function Icon(){
@@ -17,10 +18,14 @@ function Icon(){
     }
 
     return(
-        <div className="profile-img" onClick={handleClick}>
-            <img src={image} alt="Icon"/>
-            <input type="file" ref={ref} style={{display: 'none'}} accept=".png, .jpg, .jpeg" onChange={handleAccept}/>
-        </div>
+        <>
+            <Button redirect="/login">Login</Button>
+            <Button redirect="/signup">Register</Button>
+            <div className="profile-img" onClick={handleClick}>
+                <img src={image} alt="Icon"/>
+                <input type="file" ref={ref} style={{display: 'none'}} accept=".png, .jpg, .jpeg" onChange={handleAccept}/>
+            </div>
+        </>
     );
 
 }
