@@ -1,7 +1,7 @@
 import axios from "axios";
 
-export async function getUserData() {
-    return axios.post("http://localhost:4000/profile")
+export async function getUserData(id) {
+    return axios.get("http://localhost:4000/profile/" + id)
     .then(res => res.data);
 }
 

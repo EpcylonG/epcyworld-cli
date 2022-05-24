@@ -5,13 +5,13 @@ import image from "../../assets/imgs/Logo.png";
 import "./Header.scss";
 
 
-function Header() {
+function Header( {user} ) {
 
     return(
         <div className="header">
             <img src={image} alt="Icon"/>
             <Menu></Menu>
-            <Icon></Icon>
+            <Icon user={user}></Icon>
         </div>
     );
 

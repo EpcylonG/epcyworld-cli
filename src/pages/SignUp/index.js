@@ -34,7 +34,7 @@ function SignUp(){
     return(
         <div>
             <h1>Register</h1>
-            <Formik
+            {/* <Formik
              initialValues={initialValues}
              validationSchema=""
              onSubmit={() => {handleSubmit()}}
@@ -46,7 +46,7 @@ function SignUp(){
                     <Field type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password"/>
                     <Button type="submit">Register</Button>
                  </Form>
-            </Formik>
+            </Formik> */}
             <hr></hr>
             <h2>SignUp with google</h2>
             <Button type="submit" onClick={() => signUpGoogle()}>Google</Button>
