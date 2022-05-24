@@ -5,7 +5,7 @@ import "./Menu.scss";
 
 function Menu() {
 
-    const menuArray = ["Home", "Glosary", "About Game", "FAQ"]
+    const menuArray = ["Home", "Glosary", "About Game", "FAQ", "Other Games"]
 
 
     return(
