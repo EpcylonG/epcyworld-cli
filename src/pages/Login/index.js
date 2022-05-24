@@ -48,9 +48,9 @@ function Login(){
                 onSubmit={() => handleSubmit()}
                 >
                     <Form>
-                        {/* <Field type="text" id="username" name="username" placeholder="Username"/>
+                        <Field type="text" id="username" name="username" placeholder="Username"/>
                         <Field type="mail" id="email" name="email" placeholder="email"/>
-                        <Field type="password" id="password" name="password" placeholder="password"/> */}
+                        <Field type="password" id="password" name="password" placeholder="password"/>
                         <Button type="submit" onClick={() => signInGoogle()}>Login with Google</Button>
                     </Form>
                 </Formik>
