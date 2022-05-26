@@ -25,7 +25,7 @@ function Icon( {user} ){
 
     return(
         <>
-            {user.email ? user.email:
+            {user && user.email ? user.email:
                 <><Button redirect="/login">Login</Button>
                 <Button redirect="/signup">Register</Button></>
             }

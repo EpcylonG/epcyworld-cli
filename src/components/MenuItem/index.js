@@ -1,12 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./MenuItem.scss";
 
 
-function MenuItem( { children }) {
+function MenuItem( { redirect, children }) {
+
+    const navigate = useNavigate();
 
     return(
-        <button className="menu-item" onClick={() => {console.log("")}}>
+        <button className="menu-item" onClick={() => {navigate(redirect)}}>
             {children}
         </button>
     );
