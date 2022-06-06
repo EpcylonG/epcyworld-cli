@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./Button.scss";
 
 function Button( { redirect, type, onClick, children}) {
 
@@ -18,7 +19,7 @@ function Button( { redirect, type, onClick, children}) {
 
     return(
         <>
-            <button type={type} onClick={() => handleClick()}>{children}</button>
+            <button type={type} className="button" onClick={() => handleClick()}>{children}</button>
         </>
     );
 
